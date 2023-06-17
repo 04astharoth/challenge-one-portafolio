@@ -37,6 +37,7 @@ header.menu {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 8%;
+	margin-bottom: 1rem;
 }
 
 .menu__logo {
@@ -50,6 +51,11 @@ header.menu {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
+	font-weight: 500;
+}
+
+.item__contacto, .menu__title{
+	font-weight: 700;
 }
 
 /*Sección Title*/
