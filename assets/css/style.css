@@ -11,7 +11,7 @@ coloque nas sessões indicadas*/
 	--cor-de-link: #000;
 }
 
-body {
+* {
 	box-sizing: border-box;
 	background-color: var(--cor-de-fundo);
 	font-family: "Raleway";
@@ -29,27 +29,20 @@ a {
 	color: var(--cor-de-link);
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
 /*Sección Menu*/
 
 header.menu {
-	height: 88px;
+	height: 5.5rem;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	padding: 2rem 0rem;
-	gap: 38.1875rem;
+	justify-content: space-between;
+	padding: 0 8%;
 }
 
 .menu__logo {
 	display: flex;
 	height: 1.5rem;
 	align-items: center;
-	padding: 0rem;
 	gap: 0.5rem;
 }
 
