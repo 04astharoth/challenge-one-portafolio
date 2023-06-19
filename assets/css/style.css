@@ -11,6 +11,7 @@ coloque nas sessões indicadas*/
 	--color-fondo-sobre-mi: #eaf2fd;
 	--cor-de-link: #000;
 	--color-fuente: #464646;
+	--color-box: #FFFFFF;
 }
 
 * {
@@ -135,16 +136,69 @@ section.about * {
 }
 
 .about__paragraph {
-	width: 751px;
+	width: 46.9375rem;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 1.1875rem;
 }
 
-/*Sección Hobbies*/
+/*Sección Skills & Hobbies*/
 
-section.hobbies {
+section.skills-hobbies {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 8%;
+	margin-top: 2rem;
+}
+
+section.hobbies, section.skills {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 5.5rem;
+}
+
+.skills__title,.hobbies__title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2em;
+	line-height: 2.375rem;
+	text-align: center;
+}
+
+.skills__line,.hobbies__line {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.skills__box, .hobbies__box{
+	flex: 1 0 10%;
+	/* width: 100%; */
+	background-color: var(--color-box);
+}
+
+.skills__box *, .hobbies__box *{
+	background-color: transparent;
+}
+
+.skills__box ul, .hobbies__box ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 10.875rem;
+	padding: 1rem;
+	gap: .5rem;
+}
+
+.skills__name, .hobbies__name{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.1875rem;
 }
 
 /* Experiencia Académica*/
