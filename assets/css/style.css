@@ -13,6 +13,8 @@ coloque nas sessões indicadas*/
 	--cor-de-link: #000;
 	--color-fuente: #464646;
 	--color-box: #FFFFFF;
+	--color-btn-primario: #2a7ae4;
+	--color-btn-secundario: #FFFFFF;
 }
 
 * {
@@ -267,6 +269,69 @@ section.academic .academic__courses__item__img{
 /* experiencia*/
 
 section.experience {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 8%;
+}
+
+.experience__title{
+	font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 2.375rem;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.experience__box{
+	display: flex;
+	align-items: center;
+	padding-bottom: 4rem;
+	gap: 1rem;
+}
+
+section.experience .experience__box:nth-child(odd) .experience__info-container{
+	order: -1;
+}
+
+.experience__info-container{
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	flex: 1 0 0;
+}
+
+.experience__info__title{
+	font-size: 1.625em;
+	font-weight: 700;
+}
+
+.experience__text{
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.experience__description{
+	display: flex;
+	gap: 1rem;
+}
+
+.experience__boton{
+	display: flex;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+	gap: .625rem;
+	border: 1px solid var(--color-btn-primario, #2A7AE4);
+}
+
+.boton__repo{
+	color: var(--color-btn-primario, #2A7AE4);
+}
+
+.boton__demo{
+	color: var(--color-btn-secundario);
+	background: var(--color-btn-primario, #2A7AE4);
 }
 
 /*Contacto*/
