@@ -11,6 +11,7 @@ coloque nas sessões indicadas*/
 	--color-fondo-sobre-mi: #eaf2fd;
 	--color-fondo-academic: #eaf2fd;
 	--color-fondo-contacto: #eaf2fd;
+	--color-fondo-footer: #ffffff;
 	--cor-de-link: #000;
 	--color-fuente: #464646;
 	--color-box: #FFFFFF;
@@ -425,6 +426,21 @@ section.contacto * {
 /*footeer*/
 
 section.footer {
+	display: flex;
+	padding: 2rem;
+	justify-content: center;
+	align-content: center;
+	background-color: var(--color-fondo-footer);
+}
+
+.footer *{
+	background-color: transparent;
+}
+
+.footer__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
