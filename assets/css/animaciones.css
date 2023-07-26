@@ -54,11 +54,25 @@
 
 /* Formacion */
 section.academic .academic__box-img:hover img {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 section.academic .academic__box-img img {
 	transition: transform 0.2s ease;
+}
+
+/* Proyectos */
+.experience__box {
+	overflow: hidden;
+}
+
+.experience__box img {
+	transform-origin: center bottom;
+	transition: transform 0.2s;
+}
+
+.experience__box:hover img {
+	transform: scale(1.05);
 }
 
 /* Transicion para botones */
