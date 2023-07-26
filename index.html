@@ -377,10 +377,26 @@
 						¡Espero tu información, Gracias!
 					</p>
 					<form class="contacto__form" name="form">
-						<input class="contacto__input" type="text" name="nombre" placeholder="Nombre" required/>
-						<input class="contacto__input" type="email" name="email" placeholder="E-mail" required/>
-						<input class="contacto__input" type="text" name="asunto" placeholder="Asunto" required/>
-						<textarea class="contacto__input contacto__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required></textarea>
+						<div class="contacto__input-container">
+							<input class="contacto__input" name="nombre" type="text" placeholder="Nombre" required data-tipo="nombre"/>
+							<label class="contacto__input-label" for="name">Nombre</label>
+							<span class="contacto__input-message-error">Este campo no es valido</span>
+						</div>
+						<div class="contacto__input-container">
+							<input class="contacto__input" type="email" name="email" placeholder="E-mail" required data-tipo="email"/>
+							<label class="contacto__input-label" for="email">Email</label>
+							<span class="contacto__input-message-error">Este campo no es valido</span>
+						</div>
+						<div class="contacto__input-container">
+							<input class="contacto__input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto"/>
+							<label class="contacto__input-label" for="asunto">Asunto</label>
+							<span class="contacto__input-message-error">Este campo no es valido</span>
+						</div>
+						<div class="contacto__input-container">
+							<textarea class="contacto__input contacto__textarea" rows="5" cols="40" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+							<label class="contacto__input-label" for="mensaje">Mensaje</label>
+							<span class="contacto__input-message-error">Este campo no es valido</span>
+						</div>
 						<button type="submit" class="contacto__boton-primario boton">Enviar mensaje</button>
 					</form>
 				</div>
@@ -394,6 +410,6 @@
 			</div>
 		</section>
 		<!-- Script del documento JavaScript -->
-		<script src="validacion.js"></script>
+		<script src="./assets/js/app.js" type="module"></script>
 	</body>
 </html>
