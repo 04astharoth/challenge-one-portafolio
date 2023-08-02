@@ -15,6 +15,9 @@
 	--relleno-icono-hover: grayscale(0%);
 	--fuente-gris-claro: #464646;
 	--color-box: #ffffff;
+	--btn-disabled-fuente:#212529;
+	--btn-disabled-borde: #a4a4a4;
+	--btn-disabled-fondo: #a4a4a4;
 	--color-btn-primario: #297af5;
 	--color-btn-primario-hover: #0061c9;
 	--color-btn-secundario: #ffffff;
@@ -76,6 +79,13 @@ video {
 	border: 1px solid var(--color-btn-primario);
 	font-weight: bold;
 }
+
+.boton:disabled{
+	color: var(--btn-disabled-fuente);
+	background: var(--btn-disabled-fondo);
+	border: 1px solid var(--btn-disabled-borde);
+}
+
 [class*="__boton-secundario"] {
 	color: var(--color-btn-primario);
 }
@@ -528,9 +538,9 @@ section.contacto > * {
 	flex-direction: column;
 	box-sizing: border-box;
 	width: 100%;
-	min-height: 82.8px;
+	min-height: 5.175rem;
 	&:has(.contacto__textarea) { /* usando estilo anidado para acceder a la misma clase pero bajo la condicion "has" */
-		min-height: 157px;
+		min-height: 14.375rem;
 	}
 }
 
@@ -565,7 +575,8 @@ section.contacto > * {
 	border-radius: 7px;
 }
 
-.contacto__input-container--invalid > .contacto__input-label {
+.contacto__input-container--invalid > .contacto__input-label,
+.contacto__input-container--invalid > .contacto__contador {
 	color: var(--warning-color);
 }
 
@@ -581,8 +592,22 @@ section.contacto > * {
 }
 
 .contacto__form .contacto__textarea {
-	min-height: 8.3125rem;
+	min-height: 11.25rem;
 	resize: none;
+	margin-top: 0.5rem;
+}
+
+.contacto__contador {
+	text-align: right;
+}
+
+span.contacto__contador ~ textarea.contacto__textarea {
+	/* position: inherit; */
+	top: 1rem; /* posicion del placeholder dentro del input en el eje Y */
+	padding: 1.7rem 0.5rem 0.5rem;
+}
+span.contacto__contador ~ label.contacto__input-label {
+	top: 1.8125rem; /* posicion del placeholder dentro del input en el eje Y */
 }
 
 /*footeer*/

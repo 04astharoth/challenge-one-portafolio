@@ -109,3 +109,8 @@ section.academic .academic__box-img img {
 	top: 0.5rem; /* altura del label dentro del input */
 	transition: all 0.25s;
 }
+
+textarea.contacto__textarea:not(:placeholder-shown) + .contacto__input-label,
+textarea.contacto__textarea:focus + .contacto__input-label {
+	top: 1.8125rem; /* altura del label dentro del input */
+}

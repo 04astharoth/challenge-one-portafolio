@@ -393,11 +393,12 @@
 							<span class="contacto__input-message-error">Este campo no es valido</span>
 						</div>
 						<div class="contacto__input-container">
-							<textarea class="contacto__input contacto__textarea" rows="5" cols="40" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+							<span class="contacto__contador">0/300</span>
+							<textarea class="contacto__input contacto__textarea" height="" rows="5" cols="40" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
 							<label class="contacto__input-label" for="mensaje">Mensaje</label>
 							<span class="contacto__input-message-error">Este campo no es valido</span>
 						</div>
-						<button type="submit" class="contacto__boton-primario boton">Enviar mensaje</button>
+						<button type="submit" class="contacto__boton-primario boton" id="botonSubmit" disabled>Enviar mensaje</button>
 					</form>
 				</div>
 			</div>
